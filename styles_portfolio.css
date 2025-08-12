@@ -1,0 +1,345 @@
+:root {
+    --primary-color: #0A400C;      /* Dark green */
+    --secondary-color: #819067;    /* Olive green */
+    --accent-color: #B1AB86;       /* Beige-green */
+    --light-color: #FEFAE0;        /* Light cream */
+}
+
+body {
+    font-family: 'Roboto', Verdana, sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 2s ease-in-out;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    line-height: 1.6; /* Better readability */
+    letter-spacing: 0.3px; /* Slight breathing space */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px; /* Adds clarity */
+    line-height: 1.3; /* Keeps headings tight */
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/fonts/Angelos.ttf') format('truetype'); /* Change path to match your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+p {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    transition: all 3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(10, 64, 12, 0.95) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    padding: 80px 0;
+    transition: transform 3s ease-in-out;
+    background-color: var(--accent-color);
+}
+
+/* Fade In Down */
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade In Left */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide In Up */
+.slide-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide In Right */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Skills Icons */
+.skills-icons i {
+    font-size: 45px; /* slightly larger */
+    margin: 0 15px; /* ~30px gap total */
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+}
+.skills-icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--light-color);
+    padding: 120px 0;
+    transition: background-color 0.5s ease-in-out;
+}
+.name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align first name to left */
+    padding-bottom: 20px; /* Space before tagline */
+}
+
+.first-name-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.last-name-text {
+    font-family: 'MyCustomFont', cursive; /* Cursive style */
+    font-size: 5rem;
+    color: #FEFAE0; /* Accent color */
+    align-self: flex-end; /* Push last name to right */
+    margin-right: 20%; /* Move closer to profile image */
+    margin-top: -40px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100%;          /* Make image take full width of its column */
+    max-width: 300px;     /* Limit max size so it doesn't get too big */
+    height: auto;         /* Maintain aspect ratio */
+    object-fit: cover;    /* Ensure it fills the circle nicely */
+    border-radius: 50%;   /* Keep the rounded-circle effect */
+    display: block;       /* Remove any inline spacing */
+    margin-left: auto;    /* Center horizontally if needed */
+    margin-right: auto;   /* Center horizontally if needed */
+    
+    /* Shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* soft, diffused shadow */
+}
+
+
+/* Section Title */
+.section-title {
+    position: relative;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    transition: color 0.5s ease-in-out;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Skill Card */
+.skill-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* subtle shadow */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 10px; /* optional, for softer look */
+    transition: transform 0.3s;
+    border: none;
+}
+.skill-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* deeper shadow on hover */
+    transform: translateY(-5px); /* lift on hover */
+    transform: translateY(-5px);
+}
+.skill-icon {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 3rem;
+    transition: transform 0.3s;
+}
+/* Project Card */
+.project-card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    background-color: var(--light-color);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.project-img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+.carousel-item img {
+    max-height: 500px; /* set your preferred max height */
+    width: auto;       /* keeps original aspect ratio */
+    margin: 0 auto;    /* center horizontally */
+    object-fit: contain; /* show the whole image without cropping */
+}
+
+/* Timeline base styles (your existing styles kept) */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--primary-color, #007bff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 0.8s ease-in-out;
+}
+.left {
+    left: 0;
+    text-align: right;
+    transform: translateX(-100px);
+}
+.right {
+    left: 50%;
+    transform: translateX(100px);
+}
+.timeline-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid var(--primary-color, #007bff);
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+    text-align: right;
+    transform: translateX(-100px);
+}
+.right {
+    left: 50%;
+    transform: translateX(100px);
+}
+
+.left::after { right: -10px; }
+.right::after { left: -10px; }
+
+.timeline-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Card styling */
+.timeline-content {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Icons */
+.contact-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+.contact-icon:hover {
+    color: var(--secondary-color);
+}
+
+/* Buttons */
+button, .btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 30px 0;
+    transition: background-color 3s ease-in-out;
+}
+
+/* Responsive Timeline */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item::after {
+        left: 15px;
+    }
+    .left, .right {
+        left: 0;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+}
