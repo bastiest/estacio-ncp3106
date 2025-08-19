@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    background-image: url('b&w.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #434f5e;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* Card container */
+.card {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Top section layout */
+.top-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Left section for profile picture */
+.left-section {
+    flex: 0 0 150px;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 120px;
+    border-radius: 15px;
+    border: 3px solid #364147;
+    display: block;
+    margin: 48px auto 0 auto;
+}
+
+/* Right section for bio content */
+.right-section {
+    flex: 1;
+}
+
+/* Main title styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Strong text */
+strong {
+    color: #364147;
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    border-top: 3px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Subheading styling */
+h2 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Social section styling */
+.socials-section {
+    margin-top: 30px;
+}
+
+/* Social links container */
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Social link layout */
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Social icon size */
+.social-link img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 5px;
+}
+
+/* Social link text */
+.social-link a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 12px;
+}
