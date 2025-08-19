@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aspiring Computer Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel = "stylesheet" href = "styles_portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seminars">Seminars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+<section id="home" class="hero-section text-center fade-in-down">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Profile Image -->
+            <div class="col-lg-6 order-lg-2 position-relative">
+                <img src="assets/dp2.png" class="profile-img rounded-circle mb-4" alt="Profile Picture">
+            </div>
+
+            <!-- First Name + Surname as Images -->
+            <div class="col-lg-6 order-lg-1 text-lg-start position-relative">
+                <div class="name-wrapper">
+                    <!-- First Name Image -->
+                    <img src="assets/seb2.png" alt="Sebastian" class="first-name-img">
+
+                    <!-- Last Name Image (Overlapping First Name) -->
+                    <span class="last-name-text">Estacio</span>
+                </div>
+
+                <p class="lead mb-4">Engineering Tomorrow, One Line and Wire at a Time.</p>
+                <a href="#contact" class="btn btn-light btn-lg me-2">Contact Me</a>
+                <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                    View Resume
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 fade-in-left">
+        <div class="container">
+            <h2 class="text-center section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Introduction</h3>
+                    <p>Hello! I'm Sebastian B. Estacio, a passionate computer engineering student with a strong interest in software development, embedded systems, and artificial intelligence. I enjoy solving complex problems and creating efficient, user-friendly solutions.</p>
+                    <p>My journey in technology began with simple interest with technology and remote-controlled toys as a kid, which evolved into a deep fascination with how computers and electronics work at every level - from hardware circuits to high-level software architectures.</p>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                <h3 class="mb-4">Educational Background</h3>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content card p-4 rounded">
+                            <h4>Bachelor of Science in Computer Engineering</h4>
+                            <p class="text-muted">University of the East (2023 - 2027)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content card p-4 rounded">
+                            <h4>Science, Technology, Engineering, and Mathematics</h4>
+                            <p class="text-muted">Pasig Catholic College (2021 - 2023)</p>
+                            <p>With Honors</p>
+                            <p>Scholar (2021-2023)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content card p-4 rounded">
+                            <h4>Junior High School Program</h4>
+                            <p class="text-muted">Sta. Rosa Catholic School (2017-2021)</p>
+                            <p>With Honors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seminars and Trainings -->
+    <section id="seminars" class="py-5 bg-light slide-in-up">
+        <div class="container">
+            <h2 class="text-center section-title">Seminars & Trainings</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb 4">
+                    <div class="card h-100 skill-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-microchip fa-3x mb-3" style="color: #A2AF9B;"></i>
+                            <h4>Arduino Workshop</h4>
+                            <p class="text-muted">UE Manila</p>
+                            <p>An interactive workshop introducing the fundamentals of Arduino programming and electronics to build innovative, real-world projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb 4">
+                    <div class="card h-100 skill-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-3x mb-3" style="color: #A2AF9B;"></i>
+                            <h4>Figma Workshop</h4>
+                            <p class="text-muted">UE Manila</p>
+                            <p>A hands-on workshop teaching the essentials of Figma for designing modern, user-friendly, and collaborative digital interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb 4">
+                    <div class="card h-100 skill-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-comment fa-3x mb-3" style="color: #A2AF9B;"></i>
+                            <h4>CPE Technology Conference 2024</h4>
+                            <p class="text-muted">UE Manila</p>
+                            <p>A dynamic conference showcasing the latest innovations, research, and trends shaping the future of computer engineering technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <div class="accordion mt-5" id="seminarsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            View Additional Certifications
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#seminarsAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <h5>Cloud Architecture Fundamentals</h5>
+                                    <p>Cloud Computing Association - 2022</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Agile Project Management</h5>
+                                    <p>Scrum Alliance - 2021</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Python for Data Analysis</h5>
+                                    <p>DataCamp - 2021</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Embedded C Programming</h5>
+                                    <p>Arm University Program - 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 slide-in-right">
+    <div class="container">
+        <h2 class="text-center section-title">Technical Skills</h2>
+        <div class="row">
+            <!-- Programming Languages -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-code fa-3x mb-3" style="color: #A2AF9B;"></i>
+                        <h4>Programming Languages</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-c-plain colored skill-icon" title="C"></i>
+                            <i class="devicon-cplusplus-plain colored skill-icon" title="C++"></i>
+                            <i class="devicon-html5-plain colored skill-icon" title="HTML5"></i>
+                            <i class="devicon-javascript-plain colored skill-icon" title="JavaScript"></i>
+                            <i class="devicon-python-plain colored skill-icon" title="Python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Development -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-laptop-code fa-3x mb-3" style="color: #A2AF9B;"></i>
+                        <h4>Web Development</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-html5-plain colored skill-icon" title="HTML5"></i>
+                            <i class="devicon-css3-plain colored skill-icon" title="CSS3"></i>
+                            <i class="devicon-bootstrap-plain colored skill-icon" title="Bootstrap"></i>
+                            <i class="devicon-react-original colored skill-icon" title="React.js"></i>
+                            <i class="devicon-nodejs-plain colored skill-icon" title="Node.js"></i>
+                            <i class="devicon-django-plain colored skill-icon" title="Django"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hardware & Embedded -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-microchip fa-3x mb-3" style="color: #A2AF9B;"></i>
+                        <h4>Hardware & Embedded</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-arduino-plain colored skill-icon" title="Arduino"></i>
+                            <i class="devicon-raspberrypi-plain colored skill-icon" title="Raspberry Pi"></i>
+                            <i class="devicon-c-plain colored skill-icon" title="PCB Design"></i>
+                            <i class="devicon-cplusplus-plain colored skill-icon" title="STM32"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Row -->
+        <div class="row mt-3">
+            <!-- Database -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-database fa-3x mb-3" style="color: #A2AF9B;"></i>
+                        <h4>Database</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-mysql-plain colored skill-icon" title="MySQL"></i>
+                            <i class="devicon-mongodb-plain colored skill-icon" title="MongoDB"></i>
+                            <i class="devicon-firebase-plain colored skill-icon" title="Firebase"></i>
+                            <i class="devicon-postgresql-plain colored skill-icon" title="PostgreSQL"></i>
+                            <i class="devicon-sqlite-plain colored skill-icon" title="SQLite"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tools & Platforms -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tools fa-3x mb-3 animate__animated animate__tada" style="color: #A2AF9B;"></i>
+                        <h4>Tools & Platforms</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-git-plain colored skill-icon" title="Git"></i>
+                            <i class="devicon-github-original colored skill-icon" title="GitHub"></i>
+                            <i class="devicon-docker-plain colored skill-icon" title="Docker"></i>
+                            <i class="devicon-linux-plain colored skill-icon" title="Linux"></i>
+                            <i class="devicon-vscode-plain colored skill-icon" title="VS Code"></i>
+                            <i class="devicon-jira-plain colored skill-icon" title="JIRA"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Skills -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 skill-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-project-diagram fa-3x mb-3 animate__animated animate__tada" style="color: #A2AF9B;"></i>
+                        <h4>Other Skills</h4>
+                        <div class="skills-icons">
+                            <i class="devicon-python-plain colored skill-icon" title="Machine Learning"></i>
+                            <i class="devicon-cplusplus-plain colored skill-icon" title="Algorithms"></i>
+                            <i class="devicon-java-plain colored skill-icon" title="OOP"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">Featured Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card project-card h-100">
+          <img src="assets/abtme2.jpg"
+            alt="Smart home dashboard interface" class="card-img-top project-img">
+          <div class="card-body">
+            <h3 class="card-title">About Me Application</h3>
+            <p class="card-text">A simple and interactive application that shares key details about me, my hobbies, and my interests in a visually engaging way.</p>
+            <p><strong>Technologies:</strong> Kotlin, Android Studio</p>
+            <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card project-card h-100">
+          <img src="assets/tt1.jpg"
+            alt="Medical device with touchscreen" class="card-img-top project-img">
+          <div class="card-body">
+            <h3 class="card-title">TicTacToe</h3>
+            <p class="card-text">A fun and interactive Tic-Tac-Toe game where two players compete to get three in a row.</p>
+            <p><strong>Technologies:</strong> Kotlin, Android Studio</p>
+            <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- View More Projects Button -->
+    <div class="text-center mt-4">
+      <button class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectsModal">
+        View More Projects
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="background-color:#FEFAE0; color:#A2AF9B;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">About Me App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!--Carousel-->
+        <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/abtme1.jpg" class="d-block w-100" alt="Dashboard Interface">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/abtme2.jpg" class="d-block w-100" alt="Sensor Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/abtme3.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/abtme4.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/abtme5.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/abtme6.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+        <p>The About Me app, developed in Android Studio using Kotlin, was created to showcase personal information in a clean and interactive layout, serving as a beginner-friendly project to practice UI design, activity lifecycle, and Kotlin programming fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="background-color:#FEFAE0; color:#A2AF9B;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">TicTacToe App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!--Carousel-->
+        <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/tt1.jpg" class="d-block w-100" alt="Device Display">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt2.jpg" class="d-block w-100" alt="Wearable Sensor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt3.jpg" class="d-block w-100" alt="Hospital Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt4.jpg" class="d-block w-100" alt="Hospital Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt5.jpg" class="d-block w-100" alt="Hospital Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt6.jpg" class="d-block w-100" alt="Hospital Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tt7.jpg" class="d-block w-100" alt="Hospital Setup">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+        <p>"The Tic Tac Toe app, developed in Android Studio using Kotlin, was designed to provide a fun and interactive two-player game while enhancing skills in UI design, game logic implementation, and Kotlin programming for Android development."</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<section id="contact" class="py-5 fade-in">
+    <div class="container">
+        <h2 class="text-center section-title">Get In Touch</h2>
+        <div class="row">
+            <!-- Left Column: Contact Info -->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h3 class="mb-4">Contact Information</h3>
+
+                <div class="mb-4">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <p class="text-muted">estacio.sebastian@ue.edu.ph</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5>Phone</h5>
+                    <p class="text-muted">+63 ----</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5>Location</h5>
+                    <p class="text-muted">Pasig City, MNL</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links mt-4">
+                    <a href="https://github.com/bastiest" target="_self" class="btn btn-outline-primary btn-circle me-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_self" class="btn btn-outline-primary btn-circle me-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YOUR_USERNAME/" target="_self" class="btn btn-outline-primary btn-circle">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="col-lg-7">
+                <h3 class="mb-4">Send Me a Message</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-2">© 2025 Sebastian Estacio. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item w-100" src="https://example.com/resume.pdf" style="height: 80vh;"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://example.com/resume.pdf" class="btn btn-primary" download>Download PDF</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Projects Modal -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectsModalLabel">All Projects</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Guessing Game -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/hl1.jpg" class ="card-img-top">
+                            <div class="card-body">
+                                <h4>Guessing Game</h4>
+                                <p><strong>Technologies:</strong> Kotlin, Android Studio</p>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#guessingGameModal">Details</button>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!-- In-Between -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/inb1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h4>In-Between</h4>
+                                <p><strong>Technologies:</strong> Kotlin, Android Studio</p>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#inBetweenModal">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Guessing Game Modal -->
+<div class="modal fade" id="guessingGameModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Guessing Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/hl1.jpg" class="d-block w-100" alt="Dashboard Interface">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl2.jpg" class="d-block w-100" alt="Sensor Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl3.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl4.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl5.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl6.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/hl7.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project3Carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project3Carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                The High-Low Game app, developed in Android Studio using Kotlin, was created to offer an engaging number-guessing challenge while improving proficiency in Kotlin programming, user interface design, and implementing game logic in Android development.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- In-Between Modal -->
+<div class="modal fade" id="inBetweenModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">In-Between</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/inb1.jpg" class="d-block w-100" alt="Dashboard Interface">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/inb2.jpg" class="d-block w-100" alt="Sensor Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/inb3.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/inb4.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/inb5.jpg" class="d-block w-100" alt="Automation Control">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project5Carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project5Carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                "The In-Between app, developed in Android Studio using Kotlin, was designed to provide an interactive card-based guessing game while enhancing skills in Kotlin programming, Android UI design, and implementing dynamic game logic."
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        // Initialize tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll(
+                '.fade-in-down, .fade-in-left, .slide-in-up, .slide-in-right'
+            );
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const icons = document.querySelectorAll(".skill-icon");
+
+    icons.forEach(icon => {
+        icon.addEventListener("mouseenter", () => {
+            icon.classList.add("animate__animated", "animate__tada");
+        });
+
+        icon.addEventListener("animationend", () => {
+            icon.classList.remove("animate__animated", "animate__tada");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Get the index of the item to set a delay
+                const index = Array.from(items).indexOf(entry.target);
+                entry.target.style.transitionDelay = `${index * 0.2}s`; // 0.2s stagger
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });    
+    items.forEach(item => observer.observe(item));
+});
+</script>
+</body>
+</html>
+
+
+
+
+
