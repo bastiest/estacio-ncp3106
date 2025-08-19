@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #0A400C;      /* Dark green */
-    --secondary-color: #819067;    /* Olive green */
-    --accent-color: #B1AB86;       /* Beige-green */
-    --light-color: #FEFAE0;        /* Light cream */
+    --primary-color: #0A400C;      
+    --secondary-color: #819067;   
+    --accent-color: #B1AB86;      
+    --light-color: #FEFAE0;        
 }
 
 body {
