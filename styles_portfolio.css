@@ -210,10 +210,13 @@ section {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-  color: var(--light-color);
-  padding: 120px 0;
-  transition: background-color 0.5s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/gray_bg.png') center center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .name-wrapper {
@@ -225,14 +228,22 @@ section {
 
 .first-name-img {
   max-width: 80%;
-  height: auto;
+  height: 100;
   display: block;
+  margin-top: -40px;
 }
-
+.last-name-img {
+  max-width: 60%;
+  height: 60%;
+  display: block;
+  align-self: flex-end;
+  margin-right: 23%;
+  margin-top: -40px;
+}
 .last-name-text {
   font-family: 'MyCustomFont', cursive;
   font-size: 5rem;
-  color: var(--light-color);
+  color: var(--primary-color);
   align-self: flex-end;
   margin-right: 20%;
   margin-top: -40px;
@@ -494,4 +505,20 @@ footer {
   justify-content: center;
   gap: 0.5rem;
 }
+/* Custom bigger pulse for navbar links */
+.navbar-nav .nav-link.animate__pulse {
+  animation-name: navBigPulse !important;
+  animation-duration: 1s !important;
+}
 
+@keyframes navBigPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

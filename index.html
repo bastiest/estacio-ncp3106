@@ -81,7 +81,7 @@
                     <img src="assets/seb3.png" alt="Sebastian" class="first-name-img">
 
                     <!-- Last Name Image (Overlapping First Name) -->
-                    <span class="last-name-text">Estacio</span>
+                    <img src="assets/est3.png" alt="Sebastian" class="last-name-img">
                 </div>
 
                 <p class="lead mb-4">Engineering Tomorrow, One Line and Wire at a Time.</p>
@@ -398,7 +398,7 @@
 <!-- Project 1 Modal -->
 <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="background-color:#FEFAE0; color:#A2AF9B;">
+    <div class="modal-content" style="background-color:#e9e9e8; color:#0e100d">
       <div class="modal-header">
         <h5 class="modal-title" id="project1ModalLabel">About Me App</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -441,7 +441,7 @@
 <!-- Project 2 Modal -->
 <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="background-color:#FEFAE0; color:#A2AF9B;">
+    <div class="modal-content" style="background-color:#e9e9e8; color:#0e100d;">
       <div class="modal-header">
         <h5 class="modal-title" id="project2ModalLabel">TicTacToe App</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -827,19 +827,38 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks[id] = document.querySelector(`.navbar-nav .nav-link[href="#${id}"]`);
     });
 
-    // Observe each section
+    // Initial fadeInDown animation for all nav links on page load
+    sections.forEach((id, i) => {
+        const link = navLinks[id];
+        if (link) {
+            link.classList.add('animate__animated', 'animate__fadeInDown');
+            link.style.opacity = '1';
+            link.style.animationDelay = `${i * 0.15 + 0.2}s`;
+            link.style.animationDuration = '0.7s';
+            link.addEventListener('animationend', function handler() {
+                link.classList.remove('animate__fadeInDown');
+                link.removeEventListener('animationend', handler);
+            });
+        }
+    });
+
+    // Observe each section for pulse effect
     sections.forEach(id => {
         const section = document.getElementById(id);
         if (!section) return;
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Animate nav link when section is in view
                     const link = navLinks[id];
                     if (link) {
                         link.classList.remove('animate__fadeInDown');
+                        link.classList.remove('animate__pulse');
                         void link.offsetWidth; // trigger reflow
-                        link.classList.add('animate__animated', 'animate__fadeInDown');
+                        link.classList.add('animate__animated', 'animate__pulse');
+                        link.addEventListener('animationend', function handler() {
+                            link.classList.remove('animate__animated', 'animate__pulse');
+                            link.removeEventListener('animationend', handler);
+                        });
                     }
                 }
             });
