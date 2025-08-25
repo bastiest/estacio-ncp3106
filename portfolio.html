@@ -22,24 +22,44 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <!-- ...inside <ul class="navbar-nav ms-auto">... -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span class="nav-label">Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user nav-icon"></i>
+                            <span class="nav-label">About</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#seminars">Seminars</a>
+                        <a class="nav-link" href="#seminars">
+                            <i class="fas fa-chalkboard-teacher nav-icon"></i>
+                            <span class="nav-label">Seminars</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-cogs nav-icon"></i>
+                            <span class="nav-label">Skills</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-folder-open nav-icon"></i>
+                            <span class="nav-label">Projects</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <span class="nav-label">Contact</span>
+                        </a>
                     </li>
+                    <!-- ... -->
                 </ul>
             </div>
         </div>
@@ -183,112 +203,162 @@
             </div>
         </div>
     </section>
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 slide-in-right">
-    <div class="container">
-        <h2 class="text-center section-title">Technical Skills</h2>
-        <div class="row">
-            <!-- Programming Languages -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fa-solid fa-code fa-3x mb-3" style="color: #A2AF9B;"></i>
-                        <h4>Programming Languages</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-c-plain colored skill-icon" title="C"></i>
-                            <i class="devicon-cplusplus-plain colored skill-icon" title="C++"></i>
-                            <i class="devicon-html5-plain colored skill-icon" title="HTML5"></i>
-                            <i class="devicon-javascript-plain colored skill-icon" title="JavaScript"></i>
-                            <i class="devicon-python-plain colored skill-icon" title="Python"></i>
-                        </div>
-                    </div>
-                </div>
+<!-- Skills Section -->
+<section id="skills" class="py-5 slide-in-right">
+  <div class="container">
+    <h2 class="text-center section-title">Technical Skills</h2>
+    <div class="row">
+      <!-- Programming Languages -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <!-- FRONT: label and main icon -->
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fa-solid fa-code fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Programming Languages</h4>
+              </div>
             </div>
-            <!-- Web Development -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fa-solid fa-laptop-code fa-3x mb-3" style="color: #A2AF9B;"></i>
-                        <h4>Web Development</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-html5-plain colored skill-icon" title="HTML5"></i>
-                            <i class="devicon-css3-plain colored skill-icon" title="CSS3"></i>
-                            <i class="devicon-bootstrap-plain colored skill-icon" title="Bootstrap"></i>
-                            <i class="devicon-react-original colored skill-icon" title="React.js"></i>
-                            <i class="devicon-nodejs-plain colored skill-icon" title="Node.js"></i>
-                            <i class="devicon-django-plain colored skill-icon" title="Django"></i>
-                        </div>
-                    </div>
+            <!-- BACK: icons only -->
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Languages</h5>
+                <div class="skills-icons">
+                  <i class="devicon-c-plain colored skill-icon" data-bs-toggle="tooltip" title="C"></i>
+                  <i class="devicon-cplusplus-plain colored skill-icon" data-bs-toggle="tooltip"  title="C++"></i>
+                  <i class="devicon-html5-plain colored skill-icon" data-bs-toggle="tooltip" title="HTML5"></i>
+                  <i class="devicon-javascript-plain colored skill-icon" data-bs-toggle="tooltip" title="JavaScript"></i>
+                  <i class="devicon-python-plain colored skill-icon" data-bs-toggle="tooltip" title="Python"></i>
                 </div>
+              </div>
             </div>
-            <!-- Hardware & Embedded -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fa-solid fa-microchip fa-3x mb-3" style="color: #A2AF9B;"></i>
-                        <h4>Hardware & Embedded</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-arduino-plain colored skill-icon" title="Arduino"></i>
-                            <i class="devicon-raspberrypi-plain colored skill-icon" title="Raspberry Pi"></i>
-                            <i class="devicon-c-plain colored skill-icon" title="PCB Design"></i>
-                            <i class="devicon-cplusplus-plain colored skill-icon" title="STM32"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Second Row -->
-        <div class="row mt-3">
-            <!-- Database -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fa-solid fa-database fa-3x mb-3" style="color: #A2AF9B;"></i>
-                        <h4>Database</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-mysql-plain colored skill-icon" title="MySQL"></i>
-                            <i class="devicon-mongodb-plain colored skill-icon" title="MongoDB"></i>
-                            <i class="devicon-firebase-plain colored skill-icon" title="Firebase"></i>
-                            <i class="devicon-postgresql-plain colored skill-icon" title="PostgreSQL"></i>
-                            <i class="devicon-sqlite-plain colored skill-icon" title="SQLite"></i>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <!-- Web Development -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fa-solid fa-laptop-code fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Web Development</h4>
+              </div>
             </div>
-            <!-- Tools & Platforms -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fas fa-tools fa-3x mb-3 animate__animated animate__tada" style="color: #A2AF9B;"></i>
-                        <h4>Tools & Platforms</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-git-plain colored skill-icon" title="Git"></i>
-                            <i class="devicon-github-original colored skill-icon" title="GitHub"></i>
-                            <i class="devicon-docker-plain colored skill-icon" title="Docker"></i>
-                            <i class="devicon-linux-plain colored skill-icon" title="Linux"></i>
-                            <i class="devicon-vscode-plain colored skill-icon" title="VS Code"></i>
-                            <i class="devicon-jira-plain colored skill-icon" title="JIRA"></i>
-                        </div>
-                    </div>
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Frameworks & Tools</h5>
+                <div class="skills-icons">
+                  <i class="devicon-html5-plain colored skill-icon" data-bs-toggle="tooltip" title="HTML5"></i>
+                  <i class="devicon-css3-plain colored skill-icon" data-bs-toggle="tooltip" title="CSS3"></i>
+                  <i class="devicon-bootstrap-plain colored skill-icon" data-bs-toggle="tooltip" title="Bootstrap"></i>
+                  <i class="devicon-react-original colored skill-icon" data-bs-toggle="tooltip" title="React.js"></i>
                 </div>
+              </div>
             </div>
-            <!-- Other Skills -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 skill-card">
-                    <div class="card-body text-center">
-                        <i class="fas fa-project-diagram fa-3x mb-3 animate__animated animate__tada" style="color: #A2AF9B;"></i>
-                        <h4>Other Skills</h4>
-                        <div class="skills-icons">
-                            <i class="devicon-python-plain colored skill-icon" title="Machine Learning"></i>
-                            <i class="devicon-cplusplus-plain colored skill-icon" title="Algorithms"></i>
-                            <i class="devicon-java-plain colored skill-icon" title="OOP"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <!-- Hardware & Embedded -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fa-solid fa-microchip fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Hardware & Embedded</h4>
+              </div>
+            </div>
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Platforms</h5>
+                <div class="skills-icons">
+                  <i class="devicon-arduino-plain colored skill-icon" data-bs-toggle="tooltip" title="Arduino"></i>
+                  <i class="devicon-raspberrypi-plain colored skill-icon" data-bs-toggle="tooltip" title="Raspberry Pi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Second Row -->
+    <div class="row mt-3">
+      <!-- Database -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fa-solid fa-database fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Database</h4>
+              </div>
+            </div>
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Technologies</h5>
+                <div class="skills-icons">
+                  <i class="devicon-mysql-plain colored skill-icon" data-bs-toggle="tooltip" title="MySQL"></i>
+                  <i class="devicon-mongodb-plain colored skill-icon" data-bs-toggle="tooltip" title="MongoDB"></i>
+                  <i class="devicon-firebase-plain colored skill-icon" data-bs-toggle="tooltip" title="Firebase"></i>
+                  <i class="devicon-postgresql-plain colored skill-icon" data-bs-toggle="tooltip" title="PostgreSQL"></i>
+                  <i class="devicon-sqlite-plain colored skill-icon" data-bs-toggle="tooltip" title="SQLite"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tools & Platforms -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fas fa-tools fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Tools & Platforms</h4>
+              </div>
+            </div>
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Platforms</h5>
+                <div class="skills-icons">
+                  <i class="devicon-git-plain colored skill-icon" data-bs-toggle="tooltip" title="Git"></i>
+                  <i class="devicon-github-original colored skill-icon" data-bs-toggle="tooltip" title="GitHub"></i>       
+                  <i class="devicon-linux-plain colored skill-icon" data-bs-toggle="tooltip" title="Linux"></i>                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Other Skills -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card h-100">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <i class="fas fa-project-diagram fa-3x mb-3" style="color: #5A5A5A;"></i>
+                <h4>Other Skills</h4>
+              </div>
+            </div>
+            <div class="flip-card-back card skill-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center" style="height: 220px;">
+                <h5 class="mb-3">Topics</h5>
+                <div class="skills-icons">
+                  <i class="devicon-python-plain colored skill-icon" data-bs-toggle="tooltip" title="Machine Learning"></i>
+                  <i class="devicon-cplusplus-plain colored skill-icon" data-bs-toggle="tooltip" title="Algorithms"></i>
+                  <i class="devicon-java-plain colored skill-icon" data-bs-toggle="tooltip" title="OOP"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Projects Section -->
 <section id="projects" class="py-5 bg-light">
   <div class="container">
@@ -712,6 +782,74 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.3 });    
     items.forEach(item => observer.observe(item));
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach((link, i) => {
+        link.classList.add('animate__animated');
+        link.style.opacity = '0';
+        link.style.animationDelay = `${i * 0.15 + 0.2}s`;
+        link.style.animationDuration = '0.7s';
+    });
+
+    // Animate on page load
+    setTimeout(() => {
+        navLinks.forEach(link => {
+            link.classList.add('animate__fadeInDown');
+            link.style.opacity = '1';
+        });
+    }, 200);
+
+    // Optional: Animate on navbar open (for mobile)
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    if (navbarToggler) {
+        navbarToggler.addEventListener('click', () => {
+            navLinks.forEach((link, i) => {
+                link.classList.remove('animate__fadeInDown');
+                void link.offsetWidth; // trigger reflow
+                link.classList.add('animate__fadeInDown');
+                link.style.animationDelay = `${i * 0.15 + 0.2}s`;
+            });
+        });
+    }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Map section IDs to nav links
+    const sections = ['home', 'about', 'seminars', 'skills', 'projects', 'contact'];
+    const navLinks = {};
+    sections.forEach(id => {
+        navLinks[id] = document.querySelector(`.navbar-nav .nav-link[href="#${id}"]`);
+    });
+
+    // Observe each section
+    sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (!section) return;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate nav link when section is in view
+                    const link = navLinks[id];
+                    if (link) {
+                        link.classList.remove('animate__fadeInDown');
+                        void link.offsetWidth; // trigger reflow
+                        link.classList.add('animate__animated', 'animate__fadeInDown');
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(section);
+    });
 });
 </script>
 </body>
